@@ -1,0 +1,166 @@
+/* HIDE CURSOR */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  a::after{
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  }
+  
+  a:hover::after{
+    height: calc(100% + 8px)
+  }
+  
+
+
+  /* CUSTOM CURSOR START */
+  /* EXPANDING CURSOR */
+  .cursor {
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    border: 0.1px solid transparent;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease-out
+  }
+  
+  /* LEAD BLACK DOT CURSOR */
+  .cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .hover {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+  } */
+  /* CUSTOM CURSOR END */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    max-width: 100%;
+    background-color: beige;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  scroll-snap-align: start;
+  overflow: auto;
+}
+
+.container {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        }
+
+
+
+.one {
+    background-color: yellow;
+}
+
+.two {
+    background-color: black;
+    color: white;
+}
+
+.three {
+    background-color: yellow;
+    color: black;
+}
+
+.four {
+  background-color: white;
+  color: black;
+}
+
+.five {
+  background-color: black;
+  color: white;
+}
+
+/* .container h1 {
+
+    font-size: 17vh;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+    
+}
+
+
+
+h2 {
+    font-size: 50px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+p {
+    font-size: 24px;
+    font-family: 'Archivo', sans-serif;
+}
+
+#yellowtext {
+    color: yellow;
+} */
+
+/* Blur + Gray Scale */
+/* .hover10 figure img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover10 figure:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+} */
